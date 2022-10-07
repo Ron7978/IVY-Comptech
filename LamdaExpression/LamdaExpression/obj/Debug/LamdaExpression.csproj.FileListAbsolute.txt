@@ -1,0 +1,8 @@
+C:\Users\bhattacharya.rounak\source\repos\LamdaExpression\LamdaExpression\bin\Debug\LamdaExpression.exe.config
+C:\Users\bhattacharya.rounak\source\repos\LamdaExpression\LamdaExpression\bin\Debug\LamdaExpression.exe
+C:\Users\bhattacharya.rounak\source\repos\LamdaExpression\LamdaExpression\bin\Debug\LamdaExpression.pdb
+C:\Users\bhattacharya.rounak\source\repos\LamdaExpression\LamdaExpression\obj\Debug\LamdaExpression.csproj.AssemblyReference.cache
+C:\Users\bhattacharya.rounak\source\repos\LamdaExpression\LamdaExpression\obj\Debug\LamdaExpression.csproj.SuggestedBindingRedirects.cache
+C:\Users\bhattacharya.rounak\source\repos\LamdaExpression\LamdaExpression\obj\Debug\LamdaExpression.csproj.CoreCompileInputs.cache
+C:\Users\bhattacharya.rounak\source\repos\LamdaExpression\LamdaExpression\obj\Debug\LamdaExpression.exe
+C:\Users\bhattacharya.rounak\source\repos\LamdaExpression\LamdaExpression\obj\Debug\LamdaExpression.pdb
