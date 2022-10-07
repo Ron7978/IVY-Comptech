@@ -1,0 +1,99 @@
+//Hiding Bank Account No Program
+
+using System;
+
+namespace BankAccount
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            Console.Write("Enter the account_number: ");
+            string account_number = Console.ReadLine();
+            int hide_len = account_number.Length-4;
+            for(int i = 0; i < account_number.Length; i++)
+            {
+               if(i<hide_len)
+               {
+                   Console.Write("*");
+               }
+               else 
+               {
+                   Console.Write(account_number[i]);
+               }
+            }
+            Console.WriteLine();
+        }
+    }
+}
+
+=========================================================================================
+
+//Abstract class Program
+
+using System;
+public abstract class Solid
+{
+    public abstract double Volume();
+    public abstract double SurfaceArea();
+    public void show()
+    {
+        Console.WriteLine("Volume :" + Volume());
+        Console.WriteLine("SurfaceArea  :" + SurfaceArea());
+    }
+}
+public class Cube : Solid
+{
+    double a;
+    public Cube(double a)
+    {
+        this.a = a;
+    }
+    public override double Volume()
+    {
+        return (a*a*a);
+
+ 
+
+    }
+    public override double SurfaceArea()
+    {
+        return (6*a*a);
+    }
+}
+
+ 
+
+public class Cylinder : Solid
+{
+    double r,h;
+    public Cylinder(double r,double h)
+    {
+        this.r = r;
+        this.h = h;
+    }
+    public override double Volume()
+    {
+        return (3.14 * (r*r) * h);
+
+ 
+
+    }
+    public override double SurfaceArea()
+    {
+        return ((2 * 3.14 * r * h) + (2 * 3.14 * (r * r)));
+    }
+}
+public class Program
+{
+    public static void Main(string[] args)
+    {
+        Cube cube = new Cube(4);
+        cube.show();
+        Cylinder cylinder = new Cylinder(2,3);
+        cylinder.show();
+
+ 
+
+    }
+}
