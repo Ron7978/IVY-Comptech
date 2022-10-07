@@ -1,0 +1,361 @@
+//Q1
+using System;
+using System.Collections.Generic;
+using System.IO;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace Ques_01
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            Console.Write("Enter the No : ");
+            string num = Console.ReadLine();
+            try
+            {
+                int n = int.Parse(num);
+                Console.WriteLine("Number = " + n);
+            }
+            catch(FormatException ex)
+            {
+                Console.WriteLine("String Format is invalid...");
+                Console.WriteLine(ex.Message);
+            }
+            
+            Console.ReadLine(); 
+        }
+    }
+}
+==================================================================================================================================
+
+//Q2
+using System;
+
+namespace ErrorHandlingApplication
+{
+    class Divide
+    {
+        int result;
+
+        Divide()
+        {
+            result = 0;
+        }
+        public void division(int num1, int num2)
+        {
+            try
+            {
+                result = num1 / num2;
+            }
+            catch (DivideByZeroException e)
+            {
+                Console.WriteLine(e.Message + "\n");
+                Console.WriteLine("Exception caught: {0} \n", e);
+            }
+            finally
+            {
+                Console.WriteLine("Result: {0}", result);
+            }
+        }
+        static void Main(string[] args)
+        {
+            Divide d = new Divide();
+            d.division(25, 0);
+            Console.ReadKey();
+        }
+    }
+}
+============================================================================================================================================
+
+//Q3
+using System;
+using System.Collections.Generic;
+
+namespace Groceries
+{
+    public class Program
+    {
+        public static void Main(string[] args)
+        {
+            FreshGrocery freshGrocery = new FreshGrocery();
+            freshGrocery.Name = "Fresh grocery";
+            freshGrocery.Price = 30;
+            freshGrocery.Weight = 0.5;
+
+            Grocery grocery = new Grocery();
+            grocery.Name = "Grocery";
+            grocery.Price = 50;
+            grocery.Quantity = 2;
+
+            ShoppingCart cart = new ShoppingCart();
+            cart.Orders = new List<GroceryItem>();
+            cart.Orders.Add(freshGrocery);
+            cart.Orders.Add(grocery);
+
+            double price = cart.Calculate();
+            Console.WriteLine("Price: {0}", price);
+        }
+    }
+
+    abstract class GroceryItem
+    {
+        private string name;
+        private double price = 0;
+
+        public string Name
+        {
+            get
+            {
+                return name;
+            }
+            set
+            {
+                name = value;
+            }
+        }
+
+        public double Price
+        {
+            get
+            {
+                return price;
+            }
+            set
+            {
+                price = value;
+            }
+        }
+
+        public abstract double Calculate();
+    }
+
+    class FreshGrocery : GroceryItem
+    {
+        private double weight = 0;
+
+        public double Weight
+        {
+            get
+            {
+                return weight;
+            }
+            set
+            {
+                weight = value;
+            }
+        }
+
+        public override double Calculate()
+        {
+            return this.Price * this.Weight;
+        }
+    }
+
+    class Grocery : GroceryItem
+    {
+        private int quantity = 0;
+        private double gst = 10; // In Percentage
+
+        public int Quantity
+        {
+            get
+            {
+                return quantity;
+            }
+            set
+            {
+                quantity = value;
+            }
+        }
+
+        public override double Calculate()
+        {
+            double calculatedPrice = this.Price * this.Quantity;
+
+            // VAT
+            if (calculatedPrice > 0)
+            {
+                calculatedPrice += calculatedPrice * (gst / 100);
+            }
+
+            return calculatedPrice;
+        }
+    }
+
+    class ShoppingCart
+    {
+        private List<GroceryItem> orders;
+
+        public List<GroceryItem> Orders
+        {
+            get
+            {
+                return orders;
+            }
+            set
+            {
+                orders = value;
+            }
+        }
+
+        public double Calculate()
+        {
+            double price = 0;
+            if (this.Orders != null)
+            {
+
+                foreach (GroceryItem order in this.Orders)
+                {
+                    price += order.Calculate();
+                }
+
+            }
+            return price;
+
+        }
+    }
+}
+
+==============================================================================================================================================
+//Q4
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace Ques_04
+{
+  
+    public class people
+    {
+        string book_name;
+
+      public void set_book(string book)
+        {
+            this.book_name = book;
+            Console.WriteLine(book_name);
+        }
+
+
+    }
+   
+    public class student : people
+    {
+
+      
+        public void take_book()
+        {
+           
+            Console.WriteLine("Student is taking a book for one day from Librarian");
+          
+        }
+        public void give_aatendance()
+        {
+            Console.WriteLine("Present Teacher(Sir/Ma'am)");
+        }
+        public void attend_class()
+        {
+            Console.WriteLine("I am attending class\n\n");
+        }
+    }
+    public class teacher : people
+    {
+        public void take_book(string book1)
+        {
+            Console.WriteLine("Teacher is takeing a book for maore days than student from Librarian");
+            set_book(book1);
+        }
+        public void take_attendance()
+        {
+            Console.WriteLine("I am taking Attendance");
+        }
+        public void take_class()
+        {
+            Console.WriteLine("I am taking Class\n\n");
+        }
+
+    }
+
+    public class librarian : people
+    {
+           /*The librarian can allot a book
+            give attendance*/
+        public void allot_book()
+        {
+            Console.WriteLine("Librarian allot the book");
+            set_book("C# programming");
+        }
+        public void give_attendance(string name)
+        {
+            Console.WriteLine("Librarian is giving Attendance\n\n");
+        }
+    }
+
+
+    internal class University
+    {
+        static void Main(string[] args)
+        {
+            student s = new student();
+
+            s.take_book();
+            s.set_book("C# programming");
+            s.give_aatendance();
+            s.attend_class();
+           
+
+            teacher t = new teacher();
+           
+            t.take_book("C# programming");
+           
+            t.take_attendance();
+            t.take_class();
+
+            librarian l = new librarian();
+         
+            l.allot_book();
+            
+            l.give_attendance("Student");
+
+        }
+    }
+}
+==============================================================================================================================================
+//Q5
+using System;
+
+namespace Q5
+{
+    abstract class BankAcc
+    {
+        public abstract void Link_Aadhar_Bank_AccNo();
+
+    }
+    class Link : BankAcc
+    {
+        int adh_no;
+        public Link()
+        {
+            Console.Write("Enter a Aadhar No : ");
+            adh_no = Convert.ToInt32(Console.ReadLine());
+
+        }
+        public override void Link_Aadhar_Bank_AccNo()
+        {
+            Console.WriteLine("Aadhar number link to Bank Account Successfully!");
+        }
+    }
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            Link link = new Link();
+
+            link.Link_Aadhar_Bank_AccNo();
+        }
+    }
+}
