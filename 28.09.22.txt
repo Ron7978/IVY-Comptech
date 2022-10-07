@@ -1,0 +1,139 @@
+Question 5:
+-----------
+using System;
+using System.Collections.Generic;
+using System.IO;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace Directory_27
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            string sfileName = @"mytest.txt";
+            string tfileName = @"mynewtest.txt";
+
+
+            if (File.Exists(sfileName))
+            {
+                File.Delete(sfileName);
+            }
+            if (File.Exists(tfileName))
+            {
+                File.Delete(tfileName);
+            }
+            Console.Write("\n Create a file and move the file in same folder to another name  \n");
+            Console.Write("----------------------------------------------------------------\n\n");
+            // Create the file.
+            using (StreamWriter fileStr = File.CreateText(sfileName))
+            {
+                fileStr.WriteLine(" Hello and Welcome");
+                fileStr.WriteLine(" It is the first content");
+                fileStr.WriteLine(" of the text file mytest.txt");
+            }
+            using (StreamReader sr = File.OpenText(sfileName))
+            {
+                string s = "";
+                Console.WriteLine(" Here is the content of the file {0} : ", sfileName);
+                while ((s = sr.ReadLine()) != null)
+                {
+                    Console.WriteLine(s);
+                }
+                Console.WriteLine("");
+            }
+            System.IO.File.Move(sfileName, tfileName); 
+            Console.WriteLine(" The file {0} successfully moved to the name {1} in the same directory ", sfileName, tfileName);
+
+            using (StreamReader sr = File.OpenText(tfileName))
+            {
+                string s = "";
+                Console.WriteLine(" Here is the content of the file {0} : ", tfileName);
+                while ((s = sr.ReadLine()) != null)
+                {
+                    Console.WriteLine(s);
+                }
+                Console.WriteLine("");
+            }
+            Console.ReadKey();
+        }
+    }
+}
+===============================================================================================================================================
+Question 6:
+-----------
+using System;
+using System.IO;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace Copy_File
+{
+    class Program
+    {
+        static void Main()
+        {
+            string sfileName = @"mytest.txt";
+            string tfileName = @"mynewtest.txt";
+
+            
+            if (File.Exists(sfileName))
+            {
+                File.Delete(sfileName);
+            }
+            Console.Write("\n Create a file and copy the file  \n");
+            Console.Write("----------------------------------\n");
+            
+            using (StreamWriter fileStr = File.CreateText(sfileName))
+            {
+                fileStr.WriteLine(" Hello and Welcome");
+                fileStr.WriteLine(" India is a great country");
+                fileStr.WriteLine(" Amazing opportunity to establish a good carrer");
+            }
+            using (StreamReader sr = File.OpenText(sfileName))
+            {
+                string s = "";
+                Console.WriteLine(" Here is the content of the file {0} : ", sfileName);
+                while ((s = sr.ReadLine()) != null)
+                {
+                    Console.WriteLine(s);
+                }
+                Console.WriteLine("");
+            }
+
+            System.IO.File.Copy(sfileName, tfileName, true);
+            Console.WriteLine(" The file {0} successfully copied to the name {1} in the same directory", sfileName, tfileName);
+
+            using (StreamReader sr = File.OpenText(tfileName))
+            {
+                string s = "";
+                Console.WriteLine(" Here is the content of the file {0} : ", tfileName);
+                while ((s = sr.ReadLine()) != null)
+                {
+                    Console.WriteLine(s);
+                }
+                Console.WriteLine("");
+            }
+            Console.ReadKey();
+        }
+    }
+}
+===================================================================================================================================================
+Question 7:
+-----------
+
+
+
+
+
+Write a statement lambda to calculate sum of 1 to n number.
+Write an expression lambda to find greater between two numbers.
+Write an lambda expression to swap given two numbers.
+Write an anonymous function to check given number is prime or not.
+Write an lambda expression to print all prime numbers up to n.
+Write an lambda expression to sort given array.
+
