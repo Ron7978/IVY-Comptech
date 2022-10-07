@@ -1,0 +1,8 @@
+C:\Users\bhattacharya.rounak\source\repos\Copy_File\Copy_File\bin\Debug\Copy_File.exe.config
+C:\Users\bhattacharya.rounak\source\repos\Copy_File\Copy_File\bin\Debug\Copy_File.exe
+C:\Users\bhattacharya.rounak\source\repos\Copy_File\Copy_File\bin\Debug\Copy_File.pdb
+C:\Users\bhattacharya.rounak\source\repos\Copy_File\Copy_File\obj\Debug\Copy_File.csproj.AssemblyReference.cache
+C:\Users\bhattacharya.rounak\source\repos\Copy_File\Copy_File\obj\Debug\Copy_File.csproj.SuggestedBindingRedirects.cache
+C:\Users\bhattacharya.rounak\source\repos\Copy_File\Copy_File\obj\Debug\Copy_File.csproj.CoreCompileInputs.cache
+C:\Users\bhattacharya.rounak\source\repos\Copy_File\Copy_File\obj\Debug\Copy_File.exe
+C:\Users\bhattacharya.rounak\source\repos\Copy_File\Copy_File\obj\Debug\Copy_File.pdb
