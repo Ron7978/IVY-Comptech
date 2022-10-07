@@ -1,0 +1,147 @@
+PROBLEM-1:
+using System;
+namespace Inheritance
+{
+    class Animal
+    {
+        public string name;
+        public void dispay()
+        {
+            Console.WriteLine("I'm an animal");
+        }
+    }
+    
+    class Dog : Animal
+    {
+        public void getName()
+        {
+            Console.WriteLine("My Breed is " + name);
+        }
+    }
+        
+    class Prograam
+    {
+        static void Main(string[] args)
+        {
+            Dog labrador = new Dog();
+            labrador.name = "labrador";
+            labrador.dispay();
+            labrador.getName();
+            Console.ReadLine();
+        }
+
+    }
+}
+=============================================================================================
+
+PROBLEM-2:
+using System;
+public class Program
+    {
+       public  static void Main(string[] args)
+        {
+            char[] ch = { 'b', 'a', 't' };
+
+            for (int i = ch.Length - 1; i >= 0; i--) 
+            {
+            Console.Write(ch[i] + " ");
+            }
+        }
+    }
+=======================================================================================
+
+PROBLEM-3:
+using System;
+public class Exercise2
+{
+  public static void Main()
+  {
+   Console.Write("Enter a number: ");
+   int num = Convert.ToInt32( Console.ReadLine() );
+
+   Console.Write("Enter the desired width: ");
+   int w = Convert.ToInt32( Console.ReadLine() );
+ 
+   int h = w;   
+   for (int i=0; i < h; i++)
+   {
+    for (int j=0; j<w; j++)
+   {
+   Console.Write( num );
+  }
+ 
+   Console.WriteLine();
+   w--;
+  }
+ }
+}
+===========================================================================================
+
+PROBLEM-4:
+using System;
+
+public class Program
+{
+    static void Main(string[] args)
+    {
+        string uname = "";
+        string pword = "";
+    
+        for (int i = 0; i < 3; i++)
+        {
+            Console.Write("Please enter your username: ");
+            uname = Console.ReadLine();
+            Console.Write("Please enter your password: ");
+            pword = Console.ReadLine();
+        
+            if (Three(uname, pword))
+            {
+                Console.WriteLine("You have been authenticated");
+                break;
+            }
+            else if(Three(uname, pword) == false && i < 2)
+            {
+                Console.WriteLine("Incorrect username or password, please try again");
+            }
+            else
+            {
+                Console.WriteLine("Incorrect username or password, Sorry you are locked out");
+            }
+        }
+    }
+}
+
+public class Pgm
+{
+    public static bool Three(string uname, string pword)
+    {
+        string username = "Rounak";
+        string password = "Ron99";
+    
+        if (uname == username && pword == password)
+        {
+            return true;
+        }
+        else
+        {
+            return false;
+        }
+    }
+}
+=================================================================================================
+
+PROBLEM-5:
+sing System;
+class Program
+{
+    static void Main(string[] args)
+    {
+        for (int i = -5; i <= 5; i++)
+        {
+            Console.WriteLine("y = " + i + " x = " + (i*i + 2*i + 1));
+            
+        }
+        Console.ReadKey();
+        
+    }
+}
