@@ -1,0 +1,11 @@
+C:\Users\bhattacharya.rounak\source\repos\Struct_Pointer\Struct_Pointer\bin\Debug\Struct_Pointer.exe.config
+C:\Users\bhattacharya.rounak\source\repos\Struct_Pointer\Struct_Pointer\bin\Debug\Struct_Pointer.exe
+C:\Users\bhattacharya.rounak\source\repos\Struct_Pointer\Struct_Pointer\bin\Debug\Struct_Pointer.pdb
+C:\Users\bhattacharya.rounak\source\repos\Struct_Pointer\Struct_Pointer\obj\Debug\Struct_Pointer.csproj.AssemblyReference.cache
+C:\Users\bhattacharya.rounak\source\repos\Struct_Pointer\Struct_Pointer\obj\Debug\Struct_Pointer.csproj.SuggestedBindingRedirects.cache
+C:\Users\bhattacharya.rounak\source\repos\Struct_Pointer\Struct_Pointer\obj\Debug\Struct_Pointer.Form1.resources
+C:\Users\bhattacharya.rounak\source\repos\Struct_Pointer\Struct_Pointer\obj\Debug\Struct_Pointer.Properties.Resources.resources
+C:\Users\bhattacharya.rounak\source\repos\Struct_Pointer\Struct_Pointer\obj\Debug\Struct_Pointer.csproj.GenerateResource.cache
+C:\Users\bhattacharya.rounak\source\repos\Struct_Pointer\Struct_Pointer\obj\Debug\Struct_Pointer.csproj.CoreCompileInputs.cache
+C:\Users\bhattacharya.rounak\source\repos\Struct_Pointer\Struct_Pointer\obj\Debug\Struct_Pointer.exe
+C:\Users\bhattacharya.rounak\source\repos\Struct_Pointer\Struct_Pointer\obj\Debug\Struct_Pointer.pdb
