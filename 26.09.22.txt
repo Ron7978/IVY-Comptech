@@ -1,0 +1,137 @@
+Question:1
+-----------
+using System;
+using System.IO;
+using System.Text;
+
+class Exe1
+{
+    public static void Main()
+    {
+        string fileName = "mytest.txt";
+        try
+        {
+            Console.Write("\n Append some text to an existing file  :");
+            Console.Write("\n--------------------------------------------\n\n");
+            using (StreamWriter fileStr = File.CreateText(fileName))
+            {
+                fileStr.WriteLine(" Hello and Welcome");
+                fileStr.WriteLine(" This is Rounak here");
+                fileStr.WriteLine(" My first file");
+            }
+            using (StreamReader sr = File.OpenText(fileName))
+            {
+                string s = "";
+                Console.WriteLine(" Here is the content of the file mytest.txt : ");
+                Console.WriteLine("================================================\n");
+                while ((s = sr.ReadLine()) != null)
+                {
+                    Console.WriteLine(s);
+                }
+                Console.WriteLine("");
+            }
+            using (System.IO.StreamWriter file = new System.IO.StreamWriter("mytest.txt", true))
+            {
+                file.WriteLine(" This is the line appended");
+            }
+            using (StreamReader sr = File.OpenText(fileName))
+            {
+                string s = "";
+                Console.WriteLine(" Here is the content of the file (mytest.txt) after appending the text : ");
+                Console.WriteLine("==========================================================================\n");
+                while ((s = sr.ReadLine()) != null)
+                {
+                    Console.WriteLine(s);
+                }
+                Console.WriteLine("");
+            }
+
+        }
+        catch (Exception MyExcep)
+        {
+            Console.WriteLine(MyExcep.ToString());
+        }
+    }
+}
+:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+Question:2
+-----------
+using System;
+using System.Collections.Generic;
+using System.Linq;
+namespace ComplexList
+{
+    class Student
+    {
+        public int StudentId { get; set; }
+        public string Name { get; set; }
+        public string Gender { get; set; }
+        public double TotalMarks { get; set; }
+    }
+
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            Student sOne = new Student()
+            {
+                StudentId = 104,
+                Name = "Rounak",
+                Gender = "Male",
+                TotalMarks = 650.55
+            };
+
+            Student sTwo = new Student()
+            {
+                StudentId = 103,
+                Name = "Nilesh",
+                Gender = "Male",
+                TotalMarks = 441
+            };
+
+            Student sThree = new Student()
+            {
+                StudentId = 105,
+                Name = "Samar",
+                Gender = "Male",
+                TotalMarks = 850.32
+            };
+
+            Student sFour = new Student()
+            {
+                StudentId = 106,
+                Name = "Akshat",
+                Gender = "Male",
+                TotalMarks = 612
+            };
+
+            Student sFive = new Student()
+            {
+                StudentId = 109,
+                Name = "Sonali",
+                Gender = "Female",
+                TotalMarks = 564
+            };
+
+            List<Student> StudentList = new List<Student>();
+            StudentList.Add(sOne);
+            StudentList.Add(sTwo);
+            StudentList.Add(sThree);
+            StudentList.Add(sFour);
+            StudentList.Add(sFive);
+
+
+
+            foreach (Student s in StudentList)
+            {
+                Console.WriteLine("Student_Id : {0}, Student Name : {1}, Gender : {2}, Marks : {3}", s.StudentId, s.Name, s.Gender, s.TotalMarks);
+                Console.WriteLine();
+            }
+            Console.ReadKey();
+
+        }
+    }
+}
+::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+Question 3:
+-----------
