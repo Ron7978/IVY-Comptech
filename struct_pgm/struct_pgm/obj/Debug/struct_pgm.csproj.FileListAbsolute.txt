@@ -1,0 +1,11 @@
+C:\Users\bhattacharya.rounak\source\repos\struct_pgm\struct_pgm\bin\Debug\struct_pgm.exe.config
+C:\Users\bhattacharya.rounak\source\repos\struct_pgm\struct_pgm\bin\Debug\struct_pgm.exe
+C:\Users\bhattacharya.rounak\source\repos\struct_pgm\struct_pgm\bin\Debug\struct_pgm.pdb
+C:\Users\bhattacharya.rounak\source\repos\struct_pgm\struct_pgm\obj\Debug\struct_pgm.csproj.AssemblyReference.cache
+C:\Users\bhattacharya.rounak\source\repos\struct_pgm\struct_pgm\obj\Debug\struct_pgm.csproj.SuggestedBindingRedirects.cache
+C:\Users\bhattacharya.rounak\source\repos\struct_pgm\struct_pgm\obj\Debug\struct_pgm.Form1.resources
+C:\Users\bhattacharya.rounak\source\repos\struct_pgm\struct_pgm\obj\Debug\struct_pgm.Properties.Resources.resources
+C:\Users\bhattacharya.rounak\source\repos\struct_pgm\struct_pgm\obj\Debug\struct_pgm.csproj.GenerateResource.cache
+C:\Users\bhattacharya.rounak\source\repos\struct_pgm\struct_pgm\obj\Debug\struct_pgm.csproj.CoreCompileInputs.cache
+C:\Users\bhattacharya.rounak\source\repos\struct_pgm\struct_pgm\obj\Debug\struct_pgm.exe
+C:\Users\bhattacharya.rounak\source\repos\struct_pgm\struct_pgm\obj\Debug\struct_pgm.pdb
