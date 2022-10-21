@@ -1,0 +1,8 @@
+C:\Users\bhattacharya.rounak\source\repos\Swap_File\Swap_File\bin\Debug\Swap_File.exe.config
+C:\Users\bhattacharya.rounak\source\repos\Swap_File\Swap_File\bin\Debug\Swap_File.exe
+C:\Users\bhattacharya.rounak\source\repos\Swap_File\Swap_File\bin\Debug\Swap_File.pdb
+C:\Users\bhattacharya.rounak\source\repos\Swap_File\Swap_File\obj\Debug\Swap_File.csproj.AssemblyReference.cache
+C:\Users\bhattacharya.rounak\source\repos\Swap_File\Swap_File\obj\Debug\Swap_File.csproj.SuggestedBindingRedirects.cache
+C:\Users\bhattacharya.rounak\source\repos\Swap_File\Swap_File\obj\Debug\Swap_File.csproj.CoreCompileInputs.cache
+C:\Users\bhattacharya.rounak\source\repos\Swap_File\Swap_File\obj\Debug\Swap_File.exe
+C:\Users\bhattacharya.rounak\source\repos\Swap_File\Swap_File\obj\Debug\Swap_File.pdb
