@@ -1,0 +1,8 @@
+C:\Users\bhattacharya.rounak\source\repos\Encrypt_Pgm\Encrypt_Pgm\bin\Debug\Encrypt_Pgm.exe.config
+C:\Users\bhattacharya.rounak\source\repos\Encrypt_Pgm\Encrypt_Pgm\bin\Debug\Encrypt_Pgm.exe
+C:\Users\bhattacharya.rounak\source\repos\Encrypt_Pgm\Encrypt_Pgm\bin\Debug\Encrypt_Pgm.pdb
+C:\Users\bhattacharya.rounak\source\repos\Encrypt_Pgm\Encrypt_Pgm\obj\Debug\Encrypt_Pgm.csproj.AssemblyReference.cache
+C:\Users\bhattacharya.rounak\source\repos\Encrypt_Pgm\Encrypt_Pgm\obj\Debug\Encrypt_Pgm.csproj.SuggestedBindingRedirects.cache
+C:\Users\bhattacharya.rounak\source\repos\Encrypt_Pgm\Encrypt_Pgm\obj\Debug\Encrypt_Pgm.csproj.CoreCompileInputs.cache
+C:\Users\bhattacharya.rounak\source\repos\Encrypt_Pgm\Encrypt_Pgm\obj\Debug\Encrypt_Pgm.exe
+C:\Users\bhattacharya.rounak\source\repos\Encrypt_Pgm\Encrypt_Pgm\obj\Debug\Encrypt_Pgm.pdb
